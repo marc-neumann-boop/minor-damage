@@ -16,8 +16,8 @@ SC_PARAMS = "&color=%23151413&auto_play=false&hide_related=true&show_comments=fa
 
 
 def sc_src(item):
-    url = item.get("soundcloud_embed") or item["soundcloud"]
-    return "https://w.soundcloud.com/player/?url=" + quote(url, safe="") + SC_PARAMS
+    # player_src = the src from SoundCloud's embed code, cut before "&color=" (style params are set here)
+    return item["player_src"] + SC_PARAMS
 
 
 def sc_slot(item, title):

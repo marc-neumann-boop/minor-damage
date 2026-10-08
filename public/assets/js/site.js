@@ -19,7 +19,7 @@
     var f = document.createElement("iframe");
     f.src = slot.getAttribute("data-src");
     f.title = slot.getAttribute("data-title") || "SoundCloud player";
-    f.setAttribute("allow", "autoplay");
+    f.setAttribute("allow", "autoplay; encrypted-media");
     f.setAttribute("loading", "lazy");
     f.setAttribute("scrolling", "no");
     slot.innerHTML = "";

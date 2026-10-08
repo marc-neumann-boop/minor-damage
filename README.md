@@ -7,7 +7,7 @@ Static website for PREHEAT, a work by Minor Damage. Hosted on Vercel; `public/` 
 2. Run `python3 src/build.py` — regenerates `public/index.html`, `public/impressum.html`, `public/datenschutz.html`.
 3. Commit and push. Vercel deploys automatically.
 
-`soundcloud` = link shown to visitors; `soundcloud_embed` = full track URL (soundcloud.com/…) used by the player. If `soundcloud_embed` is empty, the short link is used.
+`soundcloud` = link shown to visitors; `player_src` = the src from SoundCloud's embed code (Share → Embed), cut before `&color=`.
 
 ## Structure
 - `public/` — the live site (HTML, CSS, JS, fonts, images)
