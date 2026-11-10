@@ -1,0 +1,11 @@
+{
+  "name": "minor-damage",
+  "owner": { "name": "marc-neumann-boop" },
+  "plugins": [
+    {
+      "name": "prompt-master",
+      "source": "./mods/prompt-master",
+      "description": "One-click button that rewrites your draft prompt into a clearer, stronger one before you send it"
+    }
+  ]
+}
